@@ -1,0 +1,73 @@
+{
+  "id" : "LoanInstantiationForm",
+  "name" : "LoanInstantiationForm",
+  "type" : "form",
+  "uuid" : "6cf26eac-d899-4a34-92d4-6856abea7b61",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1750530000000,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : { "xs" : 12 },
+        "propertyValues" : {
+          "text" : { "type" : "constant", "value" : "Create Loan for Selected Books" },
+          "level" : { "type" : "constant", "value" : "Level 2" },
+          "alignment" : { "type" : "constant", "value" : "center" },
+          "cssClasses" : { "type" : "constant", "value" : "" },
+          "hidden" : { "type" : "constant", "value" : false }
+        },
+        "reference" : "titleLoan",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : { "xs" : 12 },
+        "propertyValues" : {
+          "content" : { "type" : "variable", "value" : "selectedBooks" },
+          "selectedBooksIds" : { "type" : "variable" },
+          "striped" : { "type" : "constant", "value" : true }
+        },
+        "reference" : "tableLoan",
+        "hasValidationError" : false,
+        "id" : "customTableCustomised"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : { "xs" : 12 },
+        "propertyValues" : {
+          "label" : { "type" : "constant", "value" : "Create Loans" },
+          "buttonStyle" : { "type" : "constant", "value" : "primary" },
+          "action" : { "type" : "constant", "value" : "POST" },
+          "url" : { "type" : "constant", "value" : "../API/bdm/businessData/com.company.model.Loan" },
+          "dataToSend" : { "type" : "constant", "value" : "selectedBooks.map(book => ({ book: book, loanDate: new Date() }))" },
+          "cssClasses" : { "type" : "constant", "value" : "" },
+          "disabled" : { "type" : "constant", "value" : false },
+          "allowHTML" : { "type" : "constant", "value" : false },
+          "alignment" : { "type" : "constant", "value" : "center" },
+          "closeOnSuccess" : { "type" : "constant", "value" : false }
+        },
+        "reference" : "buttonLoan",
+        "hasValidationError" : false,
+        "id" : "customButtonCustom2"
+      }
+    ]
+  ],
+  "variables" : {
+    "selectedBooks" : {
+      "type" : "json",
+      "value" : [ "{ }" ],
+      "exposed" : false
+    }
+  },
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}
