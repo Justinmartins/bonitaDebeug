@@ -21,5 +21,16 @@
             </queries>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.Loan">
+            <description>Loan Business Object</description>
+            <fields>
+                <field type="RELATION" name="book" reference="com.company.model.Book" collection="false" nullable="false"/>
+                <field type="DATE" name="loanDate" collection="false" nullable="false"/>
+                <field type="DATE" name="dueDate" collection="false" nullable="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
     </businessObjects>
 </businessObjectModel>
