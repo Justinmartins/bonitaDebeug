@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="Rebecca">
+      <firstName>Rebecca</firstName>
+      <lastName>Deneckere</lastName>
+      <title>Mme</title>
+      <jobTitle>PR</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>rebecca@miage.lol</email>
+      </professionalData>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="JusNiki">
+      <firstName>Nikita</firstName>
+      <lastName>Justin</lastName>
+      <title>CrackMIAGE</title>
+      <jobTitle>El&#xe8;ve</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Librarian">
+      <displayName>Librarian</displayName>
+    </role>
+    <role name="User">
+      <displayName>User</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="MIAGE Library">
+      <displayName>MIAGE Library</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>Rebecca</userName>
+      <roleName>Librarian</roleName>
+      <groupName>MIAGE Library</groupName>
+    </membership>
+    <membership>
+      <userName>JusNiki</userName>
+      <roleName>User</roleName>
+      <groupName>MIAGE Library</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>

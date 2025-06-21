@@ -1,0 +1,22 @@
+<div class="table-responsive">
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="book in properties.content">
+                <td>
+                    <input type="checkbox"
+                           ng-checked="properties.selectedBooksIds.indexOf(book.id) !== -1"
+                           ng-click="ctrl.toggleSelection(book.id)">
+                </td>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
